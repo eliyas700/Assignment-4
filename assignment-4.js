@@ -68,14 +68,22 @@ console.log(picnicBudget(201));
 // Problem-4(oddFriend)
 
 function oddFriend(friendName){
+
+    
     for (let i = 0; i<friendName.length; i++){
         var friend = friendName[i];
-        if (friend.length % 2 != 0) {
-             return friend;
-            
-        }  
+        if (typeof(friend) != "number") {
+            if (friend.length % 2 != 0) {
+                 return friend;
+                
+            }  
+        }
+        else{
+            return`Please type a Name `;
+        }
+       
     }       
 };
-let name = ['Shoriful','Hazrat','Shihab', 'Kalam', 'Jafor', 'Jakaria'];
+let name = ['Shoriful',"Hazrat",'Shihab', 'Kalam', 'Jafor', 'Jakaria'];
 console.log(oddFriend(name));
 
