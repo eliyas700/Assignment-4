@@ -68,8 +68,7 @@ console.log(picnicBudget(201));
 // Problem-4(oddFriend)
 
 function oddFriend(friendName){
-
-    
+ 
     for (let i = 0; i<friendName.length; i++){
         var friend = friendName[i];
         if (typeof(friend) != "number") {
